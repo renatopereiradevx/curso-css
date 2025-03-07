@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="flex">
+            <div class="title">
+                <h2>Media Queries</h2>
+                <p>Resize this page to see the effect!</p>
+
+                <p>O que é Lorem Ipsum?
+                Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+                </p>
+            </div>
+            <div class="title-image">
+                <img class="imagem1" src="imagem1.jpg" alt="Imagem 1">
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            background-color: yellow;
+        }
+
+        .flex {
+            display: flex;    
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .title {
+            max-width: 550px;
+        }
+
+        .title h2 {
+            font-size: 2.5rem;
+        }
+
+        .title-image {
+            max-width: 400px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        
+
+
+        @media ( max-width: 990px ) {
+            .container {
+                width: 100%;
+            }
+
+            .title {
+                max-width: 100%;
+            }
+
+            .title-image {
+                max-width: 60%;
+            }
+        }
+
+        @media ( max-width: 600px ) {
+            .title-image {
+                max-width: 90%;
+            }
+        }
+    </style>
+
+</body>
+</html>
